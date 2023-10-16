@@ -1,0 +1,16 @@
+#companyname{
+    color: rgba(32, 32, 32, 1);
+    font-size: 26px;
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+#titlename{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
