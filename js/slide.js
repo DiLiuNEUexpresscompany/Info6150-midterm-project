@@ -15,7 +15,6 @@
      const indicator = document.createElement("div")
      indicator.classList.add("indicator")
      indicator.onclick = () => setIndex(i)
-
      bottom.append(indicator)
  }
 
@@ -23,7 +22,7 @@
      return setInterval(() => {
          index++
          refresh()
-     }, 3000)
+     }, 6000)
  }
 
  // 自动滚动
@@ -56,7 +55,6 @@
      return function (...args) {
          let result = func(...args)
          refresh()
-
          // 重置自动滚动
          clearInterval(autoTimer)
          autoTimer = createAuto()

@@ -1,6 +1,6 @@
 .carousel {
-    width: 600px;
-    height: 800px;
+    width: 900px;
+    height: 700px;
 
     border-radius: 16px;
 
@@ -35,9 +35,8 @@
 
     object-fit: cover;
 }
-
+/*
 .carousel .shift .btn {
-    /* 绝对定位且垂直居中 */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -52,18 +51,16 @@
 
     font-size: 40px;
     font-weight: bold;
-
-    /* 字符水平垂直居中 */
     line-height: 50px;
     text-align: center;
 
     cursor: pointer;
 
     user-select: none;
-
-    /* 不透明度 0.5 */
     opacity: 0.5;
-}
+}*/
+
+
 .carousel .shift .left {
     left: 20px;
 }
@@ -80,7 +77,6 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-
     /* 宽度等同于内容宽度 */
     /* 知识点：https://3yya.com/courseware/chapter/79#关键字属性 */
     width: max-content;
@@ -91,12 +87,10 @@
 }
 
 .carousel .bottom .indicator {
-    height: 5px;
+    height: 10px;
     width: 40px;
-
-    background-color: teal;
-
-    opacity: 0.5;
+    background-color: #2F4C79;
+    /*opacity: 0.5;*/
     cursor: pointer;
 }
 
