@@ -14,3 +14,11 @@
     letter-spacing: 0;
     text-transform: uppercase;
 }
+
+#startbutton{
+    background-color: #2F4C79;
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+}
