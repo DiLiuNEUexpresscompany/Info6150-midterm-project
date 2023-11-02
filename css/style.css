@@ -15,6 +15,25 @@
     text-transform: uppercase;
 }
 
+#dropdownInformationButton {
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.hover\:hoverblue:hover{
+    background-color: #2F4C79;
+}
+
+#herosectioname{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+}
+#titlename{
+    font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
+}
+
 #startbutton{
     background-color: #2F4C79;
     font-family: "Univers LT Std 93 Extra Black Extended", Open Sans, Noto Sans Japanese, Arial Black;
