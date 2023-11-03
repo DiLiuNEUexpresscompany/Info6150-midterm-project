@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Best Tech for All Travelers - Buffer Company</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/slide.css"/>
+        <link rel="stylesheet" href="css/dividing_line.css">
+        <link rel="stylesheet" href="css/returnButton.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/slide.js" defer></script>
+        <script src="js/dropdown.js" defer></script>
+        <script src="js/roll.js" defer></script>
+        <script src="js/returnButton.js" defer></script>
+    </head>
+    <body>
+      <button id="scrollToTopButton">
+        <img src="img/up_arrow_icon.png">
+      </button>
+      <header class="bg-white shadow transitionnavbar z-1" id="navbar">
+          <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8 " >
+            <div class="relative flex h-16 justify-between">
+              <div class="relative z-15 flex px-2 lg:px-0">
+                <div class="flex flex-shrink-0 items-center">
+                  <a href="index.html" target="_blank">
+                      <img class="h-12 w-auto" src="img/CompanyLogo.svg" alt="Buffer Company Logo">
+                  </a>
+                  &nbsp; &nbsp;
+                  <a href="index.html" target="_blank">
+                      <div id="companyname">Buffer Company</div>
+                  </a>
+                </div>
+              </div>
+              <div class="relative z-15 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
+                <div class="w-full sm:max-w-xs">
+                  <label for="search" class="sr-only">Search</label>
+                  <div class="relative">
+                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                      <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <input id="search" name="search" class="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Search" type="search">
+                  </div>
+                </div>
+              </div>
+              <div class="relative z-15 flex items-center lg:hidden">
+                <!-- Mobile menu button -->
+                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open menu</span>
+                  <!--
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <!--
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:relative lg:z-15 lg:ml-4 lg:flex lg:items-center">
+                <button type="button" class="relative flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">View notifications</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                  </svg>
+                </button>
+        
+                <!-- Profile dropdown -->
+                <div class="relative ml-4 flex-shrink-0">
+                  <div>
+                    <button type="button" class="relative flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                      <span class="absolute -inset-1.5"></span>
+                      <span class="sr-only">Open user menu</span>
+                      <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    </button>
+                  </div>
+        
+                  <!--
+                    Dropdown menu, show/hide based on menu state.
+        
+                    Entering: "transition ease-out duration-100"
+                      From: "transform opacity-0 scale-95"
+                      To: "transform opacity-100 scale-100"
+                    Leaving: "transition ease-in duration-75"
+                      From: "transform opacity-100 scale-100"
+                      To: "transform opacity-0 scale-95"
+                  -->
+                  <div class="absolute right-0 z-15 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" hidden>
+                    <!-- Active: "bg-gray-100", Not Active: "" -->
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav class="hidden lg:flex lg:space-x-8 lg:py-2 "  aria-label="Global">
+              <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
+              <a href="#" class="text-gray-900 inline-flex items-center rounded-md py-2 px-3 text-sm font-medium" aria-current="page" id="titlename">Homepage</a>
+              <div class="relative">
+                <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-black hover:hoverblue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Introduction<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownInformation" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute top-full left-0 right-0">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+                    <li>
+                      <a href="#" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Hongkong</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Iceland</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Tokyo</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Italy</a>
+                    </li>
+                  </ul>
+                  <div class="py-2">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"id="titlename">More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Hotel and Transportation</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Registration</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Blog</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Company</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Login</a>
+            </nav>
+       
+        
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <nav class="lg:hidden" aria-label="Global" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
+              <a href="#" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Homepage</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Introduction</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
+              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Login</a>
+            </div>
+            <div class="border-t border-gray-200 pb-3 pt-4">
+              <div class="flex items-center px-4">
+                <div class="flex-shrink-0">
+                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                </div>
+                <div class="ml-3">
+                  <div class="text-base font-medium text-gray-800">Tom Cook</div>
+                  <div class="text-sm font-medium text-gray-500">tom@example.com</div>
+                </div>
+                <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">View notifications</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-3 space-y-1 px-2">
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Your Profile</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Settings</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Sign out</a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+
+    <section class="mb-5 ">
+      <div class="px-6 py-5 text-center md:px-12 lg:text-left ">
+        <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
+          <div class="grid items-center lg:grid-cols-2">
+            <div class="carousel md:mb-12 lg:mb-0">
+              <div class="container">
+                <a href="Hongkong.html" target="_blank"><img src="img/hongkong2-Victoria-Harbour.webp" class="w-full rounded-lg shadow-lg dark:shadow-black/20" /></a>
+                <a href="Iceland.html" target="_blank"><img src="img/Church_of_light.jpg" class="w-full rounded-lg shadow-lg dark:shadow-black/20" /></a>
+                <a href="Tokyo.html" target="_blank"><img src="img/Tokyo Skyline.webp" class="w-full rounded-lg shadow-lg dark:shadow-black/20" /></a>
+              </div>
+              <div class="shift">
+                <div class="btn left" onclick="leftShift()">&lt;</div>
+                <div class="btn right" onclick="rightShift()">&gt;</div>
+              </div>
+              <div class="bottom"></div>
+            </div>
+
+            <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0 ">
+              <div class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+                <h1 class="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl" id="herosectioname">
+                  Best Techniques <br><br><span class="text-primary">For<br><br>ALL Travelers</span>
+                </h1>
+                <a class="mb-2 inline-block rounded bg-primary px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0" ata-te-ripple-init data-te-ripple-color="light" href="registration.html" role="button" id="startbutton" target="_blank">Get started</a>
+                <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40" data-te-ripple-init data-te-ripple-color="light" href="#!" role="button" id="titlename" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+  
+
+  <div class="dividing_line mx-auto py-5"></div>
+
+
+
+ 
+
+  <div class="mx-auto max-w-4xl text-center py-10">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" id="titlename">DISCOVER OUR WORLD TOURS AND TRAVEL GUIDE</h2>
+    <p class="mt-2 text-2xl leading-8 text-black-600 paragraph">Experience World's most desired destinations in one unforgettable tour. Breathtaking must-see attractions in tourist capitals like Tokyo, Hong Kong and Reykjavik. Imperial cities such as Los Angeles and Berlin will leave you mesmerized, and fashion capitals such as Paris and Shanghai will keep you coming back for more.</p>
+  </div>
+  <section class="dark:bg-gray-800 dark:text-gray-100">
+    <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+      <a rel="noopener noreferrer" href="Iceland.html" target="_blank"class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
+        <img src="img/Reykjavic-architecture-in-Iceland.jpg" alt="" class="object-cover w-full h-64 rounded-lg sm:h-96 lg:col-span-7 dark:bg-gray-500">
+        <div class="p-6 space-y-2 lg:col-span-5">
+          <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline" id="titlename">Iceland</h3>
+          <div class="discountBox">
+            <span class="discountLetter"><strong>35% OFF</strong></span>
+          </div>
+          <span class="text-s dark:text-gray-400 paragraph"><strong> End in December 31, 2023</strong></span>
+          <p class="paragraph text-lg">Iceland boasts magnificent volcanoes and glaciers, making it one of the youngest countries on Earth. You can explore volcanic craters, such as the breathtaking Reykjanes Volcano, or visit impressive glaciers like Vatnajökull.<br> <br>Additionally, Iceland is a prime location for witnessing the Northern Lights, offering a spectacular display of this natural phenomenon during winter nights.</p>
+        </div>
+      </a>
+      
+      <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="img/hongkong3.webp">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline" id="titlename">Hongkong</h3>
+            <div class="discountBox">
+              <span class="discountLetter"><strong>25% OFF</strong></span>
+            </div>
+            <span class="text-s dark:text-gray-400 paragraph"><strong> End in November 15, 2023</strong></span>
+            <p class="paragraph text-lg">In Hong Kong, visitors can admire the stunning skyline where towering skyscrapers harmonize with majestic mountains. Take a stroll along busy streets to feel the pulse of the city, or take a cable car up Victoria Peak for a panoramic view of the entire city.<br><br>Hong Kong is a shopper's paradise with fashionable shopping malls, boutique shops, and traditional street markets.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="img/tokyo2.jpg">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline" id="titlename">Tokyo</h3>
+            <div class="discountBox">
+              <span class="discountLetter"><strong>15% OFF</strong></span>
+            </div>
+            <span class="text-s dark:text-gray-400 paragraph"><strong> End in December 23, 2023</strong></span>
+            <p class="paragraph text-lg">Tokyo is a vibrant and modern city, known for its high technology, shopping, and cuisine culture. <br><br>Visitors can explore historic landmarks and museums to experience traditional Japanese culture, or indulge in shopping and culinary delights in the bustling commercial districts. Moreover, Tokyo has many parks and gardens for relaxation and strolling.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="img/italy-rome.jpg">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"id="titlename">Italy</h3>
+            <div class="discountBox">
+              <span class="discountLetter"><strong>10% OFF</strong></span>
+            </div>
+            <span class="text-s dark:text-gray-400 paragraph"><strong> End in November 24, 2023</strong></span>
+            <p class="paragraph text-lg">Italy is a Mediterranean country full of culture and history, with some of the world's most famous art, architecture, and cultural heritage. <br><br>Visitors can explore historic landmarks such as Rome, Venice, and Florence, or indulge in delicious Italian cuisine and wine. Additionally, Italy has many beaches and mountains for relaxation and vacation.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+      <div class="dividing_line mx-auto"></div>
+
+
+      <div class="dark:bg-gray-800 dark:text-gray-50 py-5">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center mb-5" id="titlename">FROM OUR BLOG</h2>
+        <div class="container grid grid-cols-12 mx-auto">
+          <div class="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover dark:bg-gray-700 lg:col-span-6 lg:h-auto mb-5" style="background-image: url('img/Northwest_B757-200\(N536US\)_\(3521795565\).jpg'); background-position: center center; background-blend-mode: multiply; background-size: cover; ">
+            <div class="flex flex-col items-center p-8 py-12 text-center">
+              <a rel="noopener noreferrer" href="blog" target="_blank">
+                <span class="text-s dark:text-gray-400 paragraph imgtext"><strong>February 5, 2022</strong></span>
+                <h1 class="py-4 text-5xl font-bold imgtext" id="titlename">All About Airline Tickets</h1>
+                <br> <br> <br> <br> <br>
+                <p class="pb-6 text-xl imgtext" id="titlename">Delayed claims, money-saving tips are all here!</p> 
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700 ">
+            <div class="pt-6 pb-4 space-y-2">
+              <span class="text-s dark:text-gray-400 paragraph "><strong>January 16, 2023</strong></span>
+              <h1 class="text-3xl font-bold" id="titlename">Tokyo in 50 photos</h1>
+              <p class="paragraph text-xl">A long (loooooong) photoessay of my weeks in Japan. Toyko, Fuji, and more.</p>
+              <a rel="noopener noreferrer" href="#" class="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
+                <span class="paragraph text-base">Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="pt-6 pb-4 space-y-2">
+              <span class="text-s dark:text-gray-400 paragraph "><strong>June 9, 2023</strong></span>
+              <h1 class="text-3xl font-bold" id="titlename">Unexpectedly in The Dolomites</h1>
+              <p class="paragraph text-xl">I entered the world of Lord of the Rings that day.</p>
+              <a rel="noopener noreferrer" href="#" class="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
+                <span class="paragraph text-base">Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="pt-6 pb-4 space-y-2">
+              <span class="text-s dark:text-gray-400 paragraph "><strong>July 19, 2023</strong></span>
+              <h1 class="text-3xl font-bold" id="titlename">Instagramming Iceland</h1>
+              <p class="paragraph text-xl">Some photos from a magical few days driving Iceland’s Golden Circle.</p>
+              <a rel="noopener noreferrer" href="#" class="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
+                <span class="paragraph text-base">Read more</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dividing_line mx-auto"></div>
+
+
+      <footer class="bg-white ">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm: lg:px-8">
+          <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Homepage</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Blog</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-blackhover:text-gray-900 paragraph">Registration</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">About</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Hotel and Transportation</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Policy</a>
+            </div>
+          </nav>
+          <div class="mt-10 flex justify-center space-x-5">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only ">Facebook</span>
+              <img src="icon/fb.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Discord</span>
+              <img src="icon/discord.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">X</span>
+              <img src="icon/x.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">GitHub</span>
+              <img src="icon/github.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">YouTube</span>
+              <img src="icon/ytb.png" class="icon">
+            </a>
+          </div>
+          <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 Buffer Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+</html>
