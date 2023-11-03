@@ -23,6 +23,10 @@
     text-transform: uppercase;
 }
 
+.transitionnavbar {
+    animation: headerSlideDown .3s linear forwards;
+}
+
 .hover\:hoverblue:hover{
     background-color: #2F4C79;
 }
@@ -40,4 +44,31 @@
     font-weight: 800;
     line-height: 1.18;
     letter-spacing: 0;
+}
+
+.paragraph{
+    font-family: "Times New Roman", serif;
+}
+
+
+.discountLetter {
+    font-size: 18px!important;
+    line-height: 16px!important;
+}
+.discountBox{
+    background:#C82337;
+    color:#ffffff;
+    border-radius: 2px;
+    line-height: 16px;
+    margin-right: 6px;
+    padding: 4px 6px;
+    width: 100px;
+}
+
+.imgtext{
+    color: #C82337;
+}
+
+.icon{
+    width: 50px;
 }
