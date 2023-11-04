@@ -9,7 +9,6 @@
  const bottom = document.querySelector(".carousel .bottom")
  for (let i = 0; i < imageCount; i++) {
      // DOM 操作
-     // 知识点：https://3yya.com/courseware/chapter/162
 
      // 创建底部按钮
      const indicator = document.createElement("div")
