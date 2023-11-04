@@ -1,0 +1,49 @@
+.hongkongpicture{
+    max-width: 200rem;
+    height: 720px;
+}
+
+.text-yellow-400{
+    color: #D7AB61 !important;
+}
+
+
+.boder_yello{
+    --tw-border-opacity: 1;
+    border-color: #D7AB61 !important;
+}
+
+.borderingo{
+    border-width: 2.5px !important;
+    border-color: rgb(47, 76, 121);
+}
+.bg-blue {
+   
+    background-color: rgb(47, 76, 121 )!important;
+}
+
+.commentBorder{
+    border-width: 6px !important;
+}
+.spring_svg-container{
+    color: #C82337;
+}
+.summer_svg-container{
+    color: #E06236;
+}
+.autumn_svg-container{
+    color: #D7AB61;
+}
+.winter_svg-container{
+    color: #2F4C79;
+}
+
+.max_w_3xl {
+    max-width: 85rem;
+}
+.blog_color{
+    color: #C82337;
+}
+.blog_picture_height{
+    height: 46rem;
+}
