@@ -1,0 +1,30 @@
+.company_h{
+    height: 45rem;
+}
+.company_w {
+    width: 30rem;
+}
+.flex_none{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.loginpadding{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.text_blue{
+    
+    color: #2F4C79;
+}
+
+.sign_in_bg-blue{
+    background-color: #2F4C79 !important;
+}
+
+.hover\:sign_in_bg-blue:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(47, 76, 121 / var(--tw-bg-opacity))!important;
+}
