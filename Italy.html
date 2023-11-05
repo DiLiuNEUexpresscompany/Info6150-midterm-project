@@ -14,8 +14,9 @@
         <script src="js/roll.js" defer></script>
         <script src="js/returnButton.js" defer></script>
         <script src="js/selector.js" defer></script>
-        <script src="js/jumpregistration.js" defer></script>
+        <script src="js/jumpregistration_Italy.js" defer></script>
         <script src="js/comment.js" defer></script>
+        <script src="js/changeimg.js" defer></script>
     </head>
     <body>
         <button id="scrollToTopButton">
@@ -155,7 +156,7 @@
                 <a href="#" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Homepage</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Introduction</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
-                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
+                <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Login</a>
               </div>
@@ -358,7 +359,7 @@
                     </a>
                     </div>
                     <div class="mt-10">
-                        <button id="registrationBtn" type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 titlename_1">Go Registration</button>
+                      <button id="registrationBtn" type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 titlename_1" onclick="redirectToRegistration('italy')">Go Registration</button>
                     </div>
                     <div class="mt-6 text-center">
                     <a href="#" class="group inline-flex text-base font-medium">
@@ -907,7 +908,7 @@
             <h1 class="text-4xl font-bold tracking-tight text-black lg:text-6xl text-center py-5" id="titlename">Travel Tips</h1>
             <div class="max-w-xs overflow-hidden rounded-lg shadow-lg dark:bg-gray-900 dark:text-gray-100 mx-auto">
                 <div class="flex items-end justify-end h-32 p-4 dark:bg-gray-500 bg-center bg-cover" style="background-image: url(img/rome-italy-piazza.jpg);">
-                    <p class="px-2 py-1 text-sm tracki text-white titlename_1 dark:text-gray-100 uppercase dark:bg-gray-800 bg-opacity-75 rounded shadow-lg">Tokyo</p>
+                    <p class="px-2 py-1 text-sm tracki text-white titlename_1 dark:text-gray-100 uppercase dark:bg-gray-800 bg-opacity-75 rounded shadow-lg">Rome</p>
                 </div>
                 <div class="flex justify-between p-4">
                     <div class="flex flex-col flex-1 gap-4">
@@ -960,7 +961,7 @@
                     </svg>
                   </div>
                   <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">SPRING</h3>
-                  <p class="mt-2 text-base paragraph text-lg"><strong>MAR - MAY</strong><br>AVG 10°-25° Temp.</p>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>MAR - MAY</strong><br>AVG 21°-27° Temp.</p>
                 </div>
                 <div>
                   <div class="summer_svg-container">
@@ -969,7 +970,7 @@
                       </svg>
                   </div>
                   <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">SUMMER</h3>
-                  <p class="mt-2 text-base paragraph text-lg"><strong>JULY - AUG</strong><br>AVG 27°-38° Temp.</p>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>JULY - AUG</strong><br>AVG 30°-34° Temp.</p>
                 </div>
                 <div>
                   <div class="autumn_svg-container">
@@ -978,7 +979,7 @@
                     </svg>
                   </div>
                   <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">AUTUMN</h3>
-                  <p class="mt-2 text-base paragraph text-lg"><strong>SEP - NOV</strong><br>AVG 17°-27° Temp.</p>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>SEP - NOV</strong><br>AVG 12°-24° Temp.</p>
                 </div>
                 <div>
                   <div class="winter_svg-container">
@@ -987,7 +988,7 @@
                     </svg>
                   </div>
                   <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">WINTER</h3>
-                  <p class="mt-2 text-base paragraph text-lg"><strong>DEC - FEB</strong><br>AVG -5°-12° Temp.</p>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>DEC - FEB</strong><br>AVG -3°-9° Temp.</p>
                 </div>
                 
                 

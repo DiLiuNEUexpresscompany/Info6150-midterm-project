@@ -14,8 +14,9 @@
         <script src="js/roll.js" defer></script>
         <script src="js/returnButton.js" defer></script>
         <script src="js/selector.js" defer></script>
-        <script src="js/jumpregistration.js" defer></script>
+        <script src="js/jumpregistration_Iceland.js" defer></script>
         <script src="js/comment.js" defer></script>
+        <script src="js/changeimg.js" defer></script>
     </head>
     <body>
         <button id="scrollToTopButton">
@@ -141,7 +142,7 @@
                 </div>
                 
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Hotel and Transportation</a>
-                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Registration</a>
+                <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Registration</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Blog</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Company</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Login</a>
@@ -155,7 +156,7 @@
                 <a href="#" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Homepage</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Introduction</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
-                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
+                <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
                 <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Login</a>
               </div>
@@ -357,8 +358,9 @@
                     </a>
                     </div>
                     <div class="mt-10">
-                        <button id="registrationBtn" type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 titlename_1">Go Registration</button>
+                      <button id="registrationBtn" type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 titlename_1" onclick="redirectToRegistration('iceland')">Go Registration</button>
                     </div>
+                    
                     <div class="mt-6 text-center">
                     <a href="#" class="group inline-flex text-base font-medium">
                         <svg class="mr-2 h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" style="fill: green; stroke: white;">
@@ -489,7 +491,7 @@
                 </div>
                 <div class="mt-10 ">
                   <h3 class="text-xl font-medium text-gray-900 paragraph">Share your thoughts</h3>
-                  <p class="mt-1 text-sm text-gray-600 paragraph">If you’ve your own thoughts, please share your thoughts with other customers</p>
+                  <p class="mt-1 text-sm text-gray-600 paragraph">If you've your own thoughts, please share your thoughts with other customers</p>
           
                                         <!--
                     This example requires some changes to your config:
