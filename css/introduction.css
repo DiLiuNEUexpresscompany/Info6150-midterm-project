@@ -47,3 +47,19 @@
 .blog_picture_height{
     height: 46rem;
 }
+
+.table_weigth{
+    width: 75rem;
+}
+
+.gap{
+    column-gap: 10rem !important;
+}
+
+.iceland_blog_picture_height{
+    height: 35rem;
+}
+
+.icelandpicture{
+    height: 50rem !important;
+}
