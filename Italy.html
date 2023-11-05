@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Best Tech for All Travelers - Buffer Company</title>
+        <link rel="icon" type="image/x-icon" href="img/CompanyLogo.svg" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/slide.css"/>
+        <link rel="stylesheet" href="css/dividing_line.css">
+        <link rel="stylesheet" href="css/returnButton.css">
+        <link rel="stylesheet" href="css/introduction.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/slide.js" defer></script>
+        <script src="js/dropdown.js" defer></script>
+        <script src="js/roll.js" defer></script>
+        <script src="js/returnButton.js" defer></script>
+        <script src="js/selector.js" defer></script>
+        <script src="js/jumpregistration.js" defer></script>
+        <script src="js/comment.js" defer></script>
+    </head>
+    <body>
+        <button id="scrollToTopButton">
+            <img src="img/up_arrow_icon.png">
+        </button>
+        <header class="bg-white shadow transitionnavbar z-1" id="navbar">
+            <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8 " >
+              <div class="relative flex h-16 justify-between">
+                <div class="relative z-15 flex px-2 lg:px-0">
+                  <div class="flex flex-shrink-0 items-center">
+                    <a href="index.html" target="_blank">
+                        <img class="h-12 w-auto" src="img/CompanyLogo.svg" alt="Buffer Company Logo">
+                    </a>
+                    &nbsp; &nbsp;
+                    <a href="index.html" target="_blank">
+                        <div id="companyname">Buffer Company</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="relative z-15 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
+                  <div class="w-full sm:max-w-xs">
+                    <label for="search" class="sr-only">Search</label>
+                    <div class="relative">
+                      <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <input id="search" name="search" class="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Search" type="search">
+                    </div>
+                  </div>
+                </div>
+                <div class="relative z-15 flex items-center lg:hidden">
+                  <!-- Mobile menu button -->
+                  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open menu</span>
+                    <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="hidden lg:relative lg:z-15 lg:ml-4 lg:flex lg:items-center">
+                  <button type="button" class="relative flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">View notifications</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    </svg>
+                  </button>
+          
+                  <!-- Profile dropdown -->
+                  <div class="relative ml-4 flex-shrink-0">
+                    <div>
+                      <button type="button" class="relative flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">Open user menu</span>
+                        <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </button>
+                    </div>
+          
+                    <!--
+                      Dropdown menu, show/hide based on menu state.
+          
+                      Entering: "transition ease-out duration-100"
+                        From: "transform opacity-0 scale-95"
+                        To: "transform opacity-100 scale-100"
+                      Leaving: "transition ease-in duration-75"
+                        From: "transform opacity-100 scale-100"
+                        To: "transform opacity-0 scale-95"
+                    -->
+                    <div class="absolute right-0 z-15 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" hidden>
+                      <!-- Active: "bg-gray-100", Not Active: "" -->
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <nav class="hidden lg:flex lg:space-x-8 lg:py-2 "  aria-label="Global">
+                <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
+                <a href="index.html" class="text-gray-900 inline-flex items-center rounded-md py-2 px-3 text-sm font-medium" target="_blank" aria-current="page" id="titlename">Homepage</a>
+                <div class="relative">
+                  <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="text-black hover:hoverblue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Introduction<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownInformation" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute top-full left-0 right-0">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200 " aria-labelledby="dropdownInformationButton">
+                      <li>
+                        <a href="Hongkong.html" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Hongkong</a>
+                      </li>
+                      <li>
+                        <a href="Iceland.html" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Iceland</a>
+                      </li>
+                      <li>
+                        <a href="Tokyo.html" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Tokyo</a>
+                      </li>
+                      <li>
+                        <a href="Italy.html" target="_blank"class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" id="titlename">Italy</a>
+                      </li>
+                    </ul>
+                    <div class="py-2">
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"id="titlename">More</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Hotel and Transportation</a>
+                <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Registration</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Blog</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Company</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Login</a>
+              </nav>
+         
+          
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <nav class="lg:hidden" aria-label="Global" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
+                <a href="#" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Homepage</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Introduction</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
+                <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Login</a>
+              </div>
+              <div class="border-t border-gray-200 pb-3 pt-4">
+                <div class="flex items-center px-4">
+                  <div class="flex-shrink-0">
+                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  </div>
+                  <div class="ml-3">
+                    <div class="text-base font-medium text-gray-800">Tom Cook</div>
+                    <div class="text-sm font-medium text-gray-500">tom@example.com</div>
+                  </div>
+                  <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">View notifications</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="mt-3 space-y-1 px-2">
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Your Profile</a>
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Settings</a>
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Sign out</a>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+        
+          <div class="bg-white py-3 ">
+            <div class="relative mx-auto hongkongpicture ">
+              <!-- Decorative image and overlay -->
+              <div aria-hidden="true" class="absolute inset-0 overflow-hidden ">
+                <img class="h-full w-full object-cover object-center" src="img/italy.jpg" alt="tokyo">
+              </div>
+              <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50"></div>
+          
+              <div class="relative mx-auto flex max-w-5xl flex-col items-center px-6 py-24 text-center sm:py-64 lg:px-0">
+                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl" id="titlename">Italy Guided Tours and Vacation Packages</h1>
+                
+                <a href="registration.html" class="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100" id="titlename" target="_blank">Select All Tours</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dividing_line mx-auto py-5"></div>
+        
+          <div class="mx-auto max-w-xl px-4 py-5 sm:px-6  lg:grid lg:max-w-4xl  lg:gap-x-8 lg:px-8">
+            <blockquote class="text-2xl italic titlename_1 text-gray-900 dark:text-white">
+                <p>"There’s no place quite like Italy. From the busy streets of Rome and the winding canals of Venice to the cliffs of Cinque Terre, it’s all beauty and history and, of course, food. On our trips to Italy, you’ll see it all, eat it all, and love every minute."</p>
+            </blockquote>
+          </div>
+      
+
+                <!--
+        This example requires some changes to your config:
+        
+        ```
+        // tailwind.config.js
+        module.exports = {
+            // ...
+            plugins: [
+            // ...
+            require('@tailwindcss/aspect-ratio'),
+            ],
+        }
+        ```
+        -->
+        <div class="bg-white">
+            <div class="mx-auto max-w-2xl px-4 sm:px-6 sm:py-12 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <!-- Product details -->
+            <div class="lg:max-w-lg lg:self-end">
+                <nav aria-label="Breadcrumb">
+                <ol role="list" class="flex items-center space-x-2">
+                    <li>
+                    <div class="flex items-center text-lg">
+                        <a href="#" class="font-medium text-gray-500 hover:text-gray-900 paragraph">Special Packet</a>
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="ml-2 h-5 w-5 flex-shrink-0 text-gray-300">
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                        </svg>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="flex items-center text-sm">
+                        <a href="Hongkong.html" class="font-medium text-gray-500 hover:text-gray-900 paragraph">Italy</a>
+                    </div>
+                    </li>
+                </ol>
+                </nav>
+        
+                <div class="mt-4">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" id="titlename">TREASURES OF ITALY</h1>
+                </div>
+                <div class="discountBox">
+                    <span class="discountLetter"><strong>10% OFF</strong></span>
+                  </div>
+                  <span class="text-s dark:text-gray-400 paragraph"><strong> End in December 23, 2023</strong></span>
+        
+                <section aria-labelledby="information-heading" class="mt-4">
+                <h2 id="information-heading" class="sr-only">Product information</h2>
+        
+                <div class="flex items-center">
+                    <p class="text-lg text-gray-900 sm:text-xl paragraph">$4,649-$5,243</p>
+        
+                    <div class="ml-4 border-l border-gray-300 pl-4">
+                    <h2 class="sr-only">Reviews</h2>
+                    <div class="flex items-center">
+                        <div>
+                        <div class="flex items-center">
+                            <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            
+                        </div>
+                        <p class="sr-only">4 out of 5 stars</p>
+                        </div>
+                        <p class="ml-2 text-base text-gray-500 paragraph">20795 reviews</p>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="mt-4 space-y-6">
+                    <p class="text-lg text-black paragraph">Experience Italy on a guided tour. Explore the Eternal City with a Local Expert, who will whisk you to the Vatican Museums for a tour of the Pope’s art collection and a behind-the-scenes look at the Bramante Staircase, a spiral architectural masterpiece. Later, see the infamous Colosseum and the Arch of Constantine. <br><br>Cruise to Capri, where you’ll take an open-top taxi to the top of the island for unparalleled views of the rugged coastline and sparkling sea — then walk the Caesar Augustus Gardens and see the Faraglioni rocks with a Local Expert. In Venice, walk through St. Mark’s Square and see its basilica of the same name; later, allow yourself to be serenaded as a gondolier glides you through the city’s canals. Sail to the candy-colored island of Burano, where you can toast to a fantastic trip at a celebration dinner featuring wine and fresh-caught specialties.
+                        </p>
+                </div>
+        
+                <div class="mt-6 flex items-center">
+                    <svg class="h-5 w-5 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2 text-base text-gray-500 paragraph">Departures available at all times</p>
+                </div>
+                </section>
+            </div>
+        
+            <!-- Product image -->
+            <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
+                <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
+                <img src="img/italy2.jpeg" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="icelandpicture w-full object-cover object-center">
+                </div>
+            </div>
+        
+            <!-- Product form -->
+            <div class="mt-10 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
+                <section aria-labelledby="options-heading">
+                <h2 id="options-heading" class="sr-only">Product options</h2>
+        
+                <form>
+                    <div class="sm:flex sm:justify-between">
+                    <!-- Size selector -->
+                    <fieldset>
+                        <legend class="block text-xl font-medium text-black" id="titlename">Travel days</legend>
+                        <div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <!-- Active: "ring-2 ring-indigo-500" -->
+                        <div class="block cursor-pointer rounded-lg  p-4 focus:outline-none" onclick="toggleSelection(this)">
+                            <input type="radio" name="size-choice" value="18L" class="sr-only" aria-labelledby="size-choice-0-label" aria-describedby="size-choice-0-description">
+                            <p id="size-choice-0-label" class="text-xl font-medium text-gray-900 titlename_1" >8 Days</p>
+                            <p id="size-choice-0-description" class="mt-1 text-lg text-gray-500 paragraph" >8-Day Quality Tour</p>
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <div class="pointer-events-none absolute -inset-px rounded-lg"></div>
+                          </div>
+                          
+                          <!-- Active: "ring-2 ring-indigo-500" -->
+                          <div class=" block cursor-pointer rounded-lg  p-4 focus:outline-none" onclick="toggleSelection(this)">
+                            <input type="radio" name="size-choice" value="18L" class="sr-only" aria-labelledby="size-choice-0-label" aria-describedby="size-choice-0-description">
+                            <p id="size-choice-0-label" class="text-xl font-medium text-gray-900 titlename_1" >10 Days</p>
+                            <p id="size-choice-0-description" class="mt-1 text-lg text-gray-500 paragraph">10-Day Deluxe Tour</p>
+                            <!--
+                              Active: "border", Not Active: "border-2"
+                              Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <div class="pointer-events-none absolute -inset-px rounded-lg"></div>
+                          </div>
+                          
+                    </fieldset>
+                    </div>
+                    <div class="mt-4">
+                    <a href="#" class="group inline-flex text-sm text-gray-500 hover:text-gray-700">
+                        <span class="text-base paragraph">Which package should I buy?</span>
+                        <svg class="ml-2 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    </div>
+                    <div class="mt-10">
+                        <button id="registrationBtn" type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 titlename_1">Go Registration</button>
+                    </div>
+                    <div class="mt-6 text-center">
+                    <a href="#" class="group inline-flex text-base font-medium">
+                        <svg class="mr-2 h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" style="fill: green; stroke: white;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        <span class="text-gray-500 hover:text-gray-700">Lifetime Guarantee</span>
+                    </a>
+                    </div>
+                </form>
+                </section>
+            </div>
+            </div>
+        </div>
+        <div class="dividing_line mx-auto py-5"></div>
+
+        <div class="bg-white">
+            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
+              <div class="lg:col-span-4">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900 titlename_1">Customer Reviews</h2>
+          
+                <div class="mt-3 flex items-center">
+                  <div>
+                    <div class="flex items-center">
+                      <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                      <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                      </svg>
+                      <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                      </svg>
+                      <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                      </svg>
+                      <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                      </svg>
+                      <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                      </svg>
+                      
+                    </div>
+                    <p class="sr-only">5 out of 5 stars</p>
+                  </div>
+                  <p class="ml-2 text-sm text-gray-900 paragraph">Based on 20795 reviews</p>
+                </div>
+          
+                <div class="mt-6">
+                  <h3 class="sr-only">Review data</h3>
+          
+                  <dl class="space-y-3">
+                    <div class="flex items-center text-sm">
+                      <dt class="flex flex-1 items-center">
+                        <p class="w-3 font-medium text-gray-900">5<span class="sr-only"> star reviews</span></p>
+                        <div aria-hidden="true" class="ml-1 flex flex-1 items-center">
+                          <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+
+                          <div class=" ml-3 flex-1">
+                           
+                            <div style="width: calc(1019 / 1230 * 100%)" class="static inset-y-0 rounded-full commentBorder boder_yello bg_yellow"></div>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd class="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">63%</dd>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <dt class="flex flex-1 items-center">
+                        <p class="w-3 font-medium text-gray-900">4<span class="sr-only"> star reviews</span></p>
+                        <div aria-hidden="true" class="ml-1 flex flex-1 items-center">
+                          <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+
+                          <div class=" ml-3 flex-1">
+                            <div style="width: calc(162 / 1624 * 100%)" class=" inset-y-0 rounded-full commentBorder boder_yello bg_yellow"></div>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd class="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">10%</dd>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <dt class="flex flex-1 items-center">
+                        <p class="w-3 font-medium text-gray-900">3<span class="sr-only"> star reviews</span></p>
+                        <div aria-hidden="true" class="ml-1 flex flex-1 items-center">
+                          <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+
+                          <div class=" ml-3 flex-1">
+                            <div style="width: calc(97 / 1624 * 100%)" class=" inset-y-0 rounded-full commentBorder boder_yello bg_yellow"></div>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd class="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">6%</dd>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <dt class="flex flex-1 items-center">
+                        <p class="w-3 font-medium text-gray-900">2<span class="sr-only"> star reviews</span></p>
+                        <div aria-hidden="true" class="ml-1 flex flex-1 items-center">
+                          <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+
+                          <div class=" ml-3 flex-1">
+                            <div style="width: calc(199 / 1624 * 100%)" class=" inset-y-0 rounded-full commentBorder boder_yello bg_yellow"></div>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd class="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">12%</dd>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <dt class="flex flex-1 items-center">
+                        <p class="w-3 font-medium text-gray-900">1<span class="sr-only"> star reviews</span></p>
+                        <div aria-hidden="true" class="ml-1 flex flex-1 items-center">
+                          <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+
+                          <div class=" ml-3 flex-1">
+                            <div style="width: calc(147 / 1624 * 100%)" class=" inset-y-0 rounded-full commentBorder boder_yello bg_yellow"></div>
+                          </div>
+                        </div>
+                      </dt>
+                      <dd class="ml-3 w-10 text-right text-sm tabular-nums text-gray-900">9%</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="mt-10 ">
+                  <h3 class="text-xl font-medium text-gray-900 paragraph">Share your thoughts</h3>
+                  <p class="mt-1 text-sm text-gray-600 paragraph">If you’ve your own thoughts, please share your thoughts with other customers</p>
+          
+                                        <!--
+                    This example requires some changes to your config:
+                    
+                    ```
+                    // tailwind.config.js
+                    module.exports = {
+                        // ...
+                        plugins: [
+                        // ...
+                        require('@tailwindcss/forms'),
+                        ],
+                    }
+                    ```
+                    -->
+                    <div class="flex items-start space-x-4 py-5">
+                        <div class="min-w-0 flex-1">
+                        <form action="#">
+                            <div class="border-b border-gray-200 focus-within:border-indigo-600">
+                            <label for="comment" class="sr-only ">Add your comment</label>
+                            <textarea rows="3" name="comment" id="comment" class="block w-full resize-none border-0 border-b border-transparent p-0 pb-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-600 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Add your comment..."></textarea>
+                            </div>
+                            <br>
+                            <div class="flex justify-between pt-2">
+                            <div class="flex items-center space-x-5">
+                                <div class="flow-root">
+                                <button type="button" class="-m-2 inline-flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500">
+                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                                    </svg>
+                                    <span class="sr-only">Attach a file</span>
+                                </button>
+                                </div>
+                                &nbsp;
+                                <div class="flow-root">
+                                <div>
+                                    <label id="listbox-label" class="sr-only">Your mood</label>
+                                    <div class="">
+                                    <button type="button" class=" -m-2 inline-flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                                        <span class="flex items-center justify-center">
+                                        <!-- Placeholder label, show/hide based on listbox state. -->
+                                        <span>
+                                            <svg class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                                            </svg>
+                                            <span class="sr-only">Add your mood</span>
+                                        </span>
+                                        &nbsp;&nbsp;
+                                        <!-- Selected item label, show/hide based on listbox state. -->
+                                        <span>
+                                            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-red-500">
+                                            <svg class="h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M13.5 4.938a7 7 0 11-9.006 1.737c.202-.257.59-.218.793.039.278.352.594.672.943.954.332.269.786-.049.773-.476a5.977 5.977 0 01.572-2.759 6.026 6.026 0 012.486-2.665c.247-.14.55-.016.677.238A6.967 6.967 0 0013.5 4.938zM14 12a4 4 0 01-4 4c-1.913 0-3.52-1.398-3.91-3.182-.093-.429.44-.643.814-.413a4.043 4.043 0 001.601.564c.303.038.531-.24.51-.544a5.975 5.975 0 011.315-4.192.447.447 0 01.431-.16A4.001 4.001 0 0114 12z" clip-rule="evenodd" />
+                                            </svg>
+                                            </span>
+                                            <span class="sr-only">Excited</span>
+                                        </span>
+                                        </span>
+                                    </button>
+                                        
+                                    <!--
+                                        Select popover, show/hide based on select state.
+                    
+                                        Entering: ""
+                                        From: ""
+                                        To: ""
+                                        Leaving: "transition ease-in duration-100"
+                                        From: "opacity-100"
+                                        To: "opacity-0"
+                                    -->
+                                    <ul class="absolute  hidden z-10 -ml-6 w-60 rounded-lg bg-white py-3 text-base shadow ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-5">
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white  cursor-default select-none px-3 py-2" id="listbox-option-0" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-red-500 flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M13.5 4.938a7 7 0 11-9.006 1.737c.202-.257.59-.218.793.039.278.352.594.672.943.954.332.269.786-.049.773-.476a5.977 5.977 0 01.572-2.759 6.026 6.026 0 012.486-2.665c.247-.14.55-.016.677.238A6.967 6.967 0 0013.5 4.938zM14 12a4 4 0 01-4 4c-1.913 0-3.52-1.398-3.91-3.182-.093-.429.44-.643.814-.413a4.043 4.043 0 001.601.564c.303.038.531-.24.51-.544a5.975 5.975 0 011.315-4.192.447.447 0 01.431-.16A4.001 4.001 0 0114 12z" clip-rule="evenodd" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">Excited</span>
+                                        </div>
+                                        </li>
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white  cursor-default select-none px-3 py-2" id="listbox-option-1" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-pink-400 flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">Loved</span>
+                                        </div>
+                                        </li>
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white  cursor-default select-none px-3 py-2" id="listbox-option-2" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-green-400 flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.536-4.464a.75.75 0 10-1.061-1.061 3.5 3.5 0 01-4.95 0 .75.75 0 00-1.06 1.06 5 5 0 007.07 0zM9 8.5c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S7.448 7 8 7s1 .672 1 1.5zm3 1.5c.552 0 1-.672 1-1.5S12.552 7 12 7s-1 .672-1 1.5.448 1.5 1 1.5z" clip-rule="evenodd" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">Happy</span>
+                                        </div>
+                                        </li>
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white  cursor-default select-none px-3 py-2" id="listbox-option-3" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-yellow-400 flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-3.536-3.475a.75.75 0 001.061 0 3.5 3.5 0 014.95 0 .75.75 0 101.06-1.06 5 5 0 00-7.07 0 .75.75 0 000 1.06zM9 8.5c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S7.448 7 8 7s1 .672 1 1.5zm3 1.5c.552 0 1-.672 1-1.5S12.552 7 12 7s-1 .672-1 1.5.448 1.5 1 1.5z" clip-rule="evenodd" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">Sad</span>
+                                        </div>
+                                        </li>
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white cursor-default select-none px-3 py-2" id="listbox-option-4" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-blue-500 flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-white h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path d="M1 8.25a1.25 1.25 0 112.5 0v7.5a1.25 1.25 0 11-2.5 0v-7.5zM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0114 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 01-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 01-1.341-.317l-2.734-1.366A3 3 0 006.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 012.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388z" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">Thumbsy</span>
+                                        </div>
+                                        </li>
+                                        <!--
+                                        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+                    
+                                        Highlighted: "bg-gray-100", Not Highlighted: "bg-white"
+                                        -->
+                                        <li class="bg-white cursor-default select-none px-3 py-2" id="listbox-option-5" role="option">
+                                        <div class="flex items-center">
+                                            <div class="bg-transparent flex h-8 w-8 items-center justify-center rounded-full">
+                                            <svg class="text-gray-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                                            </svg>
+                                            </div>
+                                            <span class="ml-3 block truncate font-medium">I feel nothing</span>
+                                        </div>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button type="button" class="inline-flex items-center rounded-md bg-blue  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 titlename_1" id="addcomment">Post</button>
+                            </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+          
+              <div class="mt-16 lg:col-span-7 lg:col-start-6 lg:mt-0">
+                <h3 class="sr-only">Recent reviews</h3>
+          
+                <div class="flow-root">
+                  <div class="-my-12 divide-y divide-gray-200">
+                    <div class="py-12">
+                      <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80" alt="Emily Selman." class="h-12 w-12 rounded-full">
+                        <div class="ml-4">
+                          <h4 class="text-sm font-bold text-gray-900">Emily Selman</h4>
+                          <div class="mt-1 flex items-center">
+                            <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                          </div>
+                          <p class="sr-only">5 out of 5 stars</p>
+                        </div>
+                      </div>
+          
+                      <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                        <p class="paragraph text-lg">It's magical to see how a group of guests comes together over the course of our trip. I can always tell when that's happening because suddenly the enthusiasm is palpable.</p>
+                      </div>
+                    </div>
+          
+                    <!-- More reviews... -->
+                    <div class="py-12">
+                        <div class="flex items-center">
+                          <img src="img/Miriam Orr.jpg" alt="Miriam Orr." class="h-12 w-12 rounded-full">
+                          <div class="ml-4">
+                            <h4 class="text-sm font-bold text-gray-900">Miriam Orr</h4>
+                            <div class="mt-1 flex items-center">
+                              <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <!--一半的星星-->
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <defs>
+                                  <clipPath id="half-clip">
+                                    <rect x="0" y="0" width="50%" height="100%" />
+                                  </clipPath>
+                                </defs>
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" clip-path="url(#half-clip)" />
+                              </svg>
+                              
+                            </div>
+                            <p class="sr-only">5 out of 5 stars</p>
+                          </div>
+                        </div>
+            
+                        <div class="mt-4 space-y-6 text-base italic text-gray-600">
+                          <p class="paragraph text-lg">Action packed days, couldn't have done with without insight</p>
+                        </div>
+                      </div>
+                      
+                      <div class="py-12">
+                        <div class="flex items-center">
+                          <img src="img/Harold Riley.jpg" alt="Harold Riley." class="h-12 w-12 rounded-full">
+                          <div class="ml-4">
+                            <h4 class="text-sm font-bold text-gray-900">You</h4>
+                            <div class="mt-1 flex items-center">
+                              <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                              </svg>
+                            </div>
+                            <p class="sr-only">5 out of 5 stars</p>
+                          </div>
+                        </div>
+
+                        <div class="mt-4 space-y-6 italic text-gray-600 paragraph text-lg" id="addedText"></div>
+                      </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="dividing_line mx-auto py-5"></div>
+
+
+
+          
+          <div class=" overflow-x-auto shadow-md sm:rounded-lg py-5">
+            <h1 class="text-4xl font-bold tracking-tight text-black lg:text-6xl text-center py-3" id="titlename">Itinerary</h1>
+            <div class="lg:grid lg:max-w-7xl lg:grid-cols-2 gap lg:px-8 mx-auto py-5" >
+                <table class="text-xl text-left text-gray-500 dark:text-gray-400 paragraph">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-3xl titlename_1 winter_svg-container">
+                                Day
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-3xl titlename_1 winter_svg-container">
+                                Tourist Route
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                               DAY1
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Welcome to the Eternal City of Rome
+                            </td>
+                           
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY2
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Vatican City and Rome with a Local
+                            </td>
+                            
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY3
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Ancient Pompeii and on to Sorrento
+                            </td>
+                           
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY4
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                The Isle of Dreams
+                            </td>
+                            
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY5
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                The Autostrada del Sole to Florence
+                            </td>
+                            
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY6
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Florence, birthplace of the Renaissance
+                            </td>
+                            
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY7
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Cinque Terre and Portofino to Santa Margherita
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY8
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Lake Maggiore
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY9
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                To Venice With Wine Along the Way
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                                DAY10
+                            </th>
+                            <td class="px-6 py-4 text-black">
+                                Venice and the Magic of La Serenissima
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
+                    <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
+                        <img src="img/map-treasures-italy-guided-tour-2023-01-8.webp" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="w-full object-cover object-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="dividing_line mx-auto py-5"></div>
+        
+
+        <div class="bg-white">
+            <h1 class="text-4xl font-bold tracking-tight text-black lg:text-6xl text-center py-5" id="titlename">Travel Tips</h1>
+            <div class="max-w-xs overflow-hidden rounded-lg shadow-lg dark:bg-gray-900 dark:text-gray-100 mx-auto">
+                <div class="flex items-end justify-end h-32 p-4 dark:bg-gray-500 bg-center bg-cover" style="background-image: url(img/rome-italy-piazza.jpg);">
+                    <p class="px-2 py-1 text-sm tracki text-white titlename_1 dark:text-gray-100 uppercase dark:bg-gray-800 bg-opacity-75 rounded shadow-lg">Tokyo</p>
+                </div>
+                <div class="flex justify-between p-4">
+                    <div class="flex flex-col flex-1 gap-4">
+                        <div class="flex justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-5xl font-semibold">9°</span>
+                                <span class="text-lg dark:text-gray-400">/ 16°</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-12 h-12 dark:text-yellow-400 fill-current shrink-0">
+                                <path d="M256,104c-83.813,0-152,68.187-152,152s68.187,152,152,152,152-68.187,152-152S339.813,104,256,104Zm0,272A120,120,0,1,1,376,256,120.136,120.136,0,0,1,256,376Z"></path>
+                                <rect width="32" height="48" x="240" y="16"></rect>
+                                <rect width="32" height="48" x="240" y="448"></rect>
+                                <rect width="48" height="32" x="448" y="240"></rect>
+                                <rect width="48" height="32" x="16" y="240"></rect>
+                                <rect width="32" height="45.255" x="400" y="393.373" transform="rotate(-45 416 416)"></rect>
+                                <rect width="32.001" height="45.255" x="80" y="73.373" transform="rotate(-45 96 96)"></rect>
+                                <rect width="45.255" height="32" x="73.373" y="400" transform="rotate(-45.001 96.002 416.003)"></rect>
+                                <rect width="45.255" height="32.001" x="393.373" y="80" transform="rotate(-45 416 96)"></rect>
+                            </svg>
+                        </div>
+                        <p class="text-sm">Mostly sunny throughout the day.
+                            <br>6-10 KPH winds.
+                        </p>
+                    </div>
+                    <div class="text-sm leadi">
+                        <div class="flex items-center"></div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between gap-8 p-4 border-t dark:text-gray-400 dark:border-gray-700">
+                    <div class="flex items-center space-x-1">
+                        <span class="font-bold">8</span>
+                        <span class="text-sm">UV</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <span class="font-bold">5%</span>
+                        <span class="text-sm">Precip</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <span class="font-bold">14°</span>
+                        <span class="text-sm">Dew Point</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto max-w-2xl px-4 py-5 sm:px-6 sm:py-10 lg:max-w-3xl lg:px-8">
+              <div class="mx-auto grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+                <div>
+                  <div class="spring_svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-101-fill h-24 w-auto" viewBox="0 0 16 16">
+                      <path d="M4.745 1.777a.516.516 0 1 0 1.007-.224L5.496.403A.516.516 0 0 0 4.49.627l.255 1.15ZM1.023 3.535l.994.633a.516.516 0 0 0 .554-.87l-.994-.633a.516.516 0 0 0-.554.87ZM.628 8.043l1.15-.256a.516.516 0 0 0-.223-1.008l-1.15.256a.516.516 0 1 0 .223 1.008Zm10.238-2.28a.535.535 0 0 0 .112-.012l1.15-.256a.516.516 0 1 0-.224-1.008l-1.15.256a.516.516 0 0 0 .112 1.02ZM8.522 2.728a.516.516 0 0 0 .712-.158l.633-.994a.516.516 0 0 0-.87-.554l-.633.994a.516.516 0 0 0 .158.712ZM2.819 7.032c.071.303.182.596.331.87a3.13 3.13 0 0 0 .908-.486 2.453 2.453 0 0 1-.232-.608A2.504 2.504 0 0 1 8.714 5.72l.004.038a5.42 5.42 0 0 1 1.064.25 3.51 3.51 0 0 0-.061-.512 3.535 3.535 0 0 0-6.902 1.536Zm9.175 7.364A4.758 4.758 0 0 1 8.406 16a4.76 4.76 0 0 1-3.537-1.547 2.908 2.908 0 0 1-1.056.197C2.258 14.65 1 13.441 1 11.95s1.26-2.7 2.813-2.7c.173 0 .342.015.507.044C5.124 7.924 6.652 7 8.406 7c1.769 0 3.308.94 4.107 2.328a2.93 2.93 0 0 1 .675-.078c1.553 0 2.812 1.209 2.812 2.7s-1.26 2.7-2.813 2.7a2.9 2.9 0 0 1-1.193-.254Z"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">SPRING</h3>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>MAR - MAY</strong><br>AVG 10°-25° Temp.</p>
+                </div>
+                <div>
+                  <div class="summer_svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-100 h-24 w-auto" viewBox="0 0 16 16">
+                        <path d="M7.655 2.357a.5.5 0 0 0 .854-.353v-1.5a.5.5 0 0 0-1 0v1.5a.5.5 0 0 0 .146.353Zm-4.08 1.861c.06.026.126.039.191.039l.001-.001a.5.5 0 0 0 .355-.855l-1.064-1.06a.5.5 0 0 0-.707.708l1.062 1.06a.498.498 0 0 0 .162.11ZM.503 8.496h1.5a.5.5 0 1 0 0-1h-1.5a.5.5 0 0 0 0 1Zm1.914 5.221a.501.501 0 0 0 .631-.063l1.063-1.06a.5.5 0 0 0-.708-.707l-1.062 1.06a.5.5 0 0 0 .076.77Zm5.225 2.14a.5.5 0 0 0 .854-.354v-1.5a.5.5 0 0 0-1 0v1.5a.5.5 0 0 0 .146.354Zm5.467-2.084a.5.5 0 0 0 .544-.816l-1.06-1.06a.498.498 0 0 0-.832.152.5.5 0 0 0 .126.555l1.06 1.06a.496.496 0 0 0 .162.109Zm.893-5.263h1.5a.5.5 0 1 0 0-1h-1.5a.5.5 0 0 0 0 1Zm-2.031-4.327a.5.5 0 0 0 .633-.063l1.06-1.06a.5.5 0 1 0-.708-.708l-1.06 1.06a.5.5 0 0 0 .075.77Zm-6.466.075a4.5 4.5 0 1 1 5 7.484 4.5 4.5 0 0 1-5-7.484Zm4.445.832a3.5 3.5 0 1 0-3.89 5.82 3.5 3.5 0 0 0 3.89-5.82Z"/>
+                      </svg>
+                  </div>
+                  <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">SUMMER</h3>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>JULY - AUG</strong><br>AVG 27°-38° Temp.</p>
+                </div>
+                <div>
+                  <div class="autumn_svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-509 h-24 w-auto" viewBox="0 0 16 16">
+                      <path d="M.25 11a.25.25 0 1 0 0 .5h9.5a.25.25 0 1 0 0-.5H.25Zm3 1.5a.25.25 0 1 0 0 .5h3.5a.25.25 0 1 0 0-.5h-3.5ZM10 14.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 1 1 0 .5h-3.5a.25.25 0 0 1-.25-.25ZM8.25 12.5a.25.25 0 1 0 0 .5h7.5a.25.25 0 1 0 0-.5h-7.5ZM1 14.25a.25.25 0 0 1 .25-.25h7.5a.25.25 0 1 1 0 .5h-7.5a.25.25 0 0 1-.25-.25Zm2.25 1.25a.25.25 0 1 0 0 .5h9.5a.25.25 0 1 0 0-.5h-9.5ZM7.9 10c1.453 0 2.761-.62 3.675-1.61a.335.335 0 0 1 .365-.083 3 3 0 1 0 .566-5.767.335.335 0 0 1-.341-.152A4.997 4.997 0 0 0 7.9 0a4.997 4.997 0 0 0-4.25 2.365.334.334 0 0 1-.32.153 3 3 0 1 0 .596 5.836.334.334 0 0 1 .345.086A4.99 4.99 0 0 0 7.9 10Zm3.905-2.896c-.172-.129-.438-.097-.555.083A3.997 3.997 0 0 1 7.9 9a3.996 3.996 0 0 1-3.297-1.734c-.112-.163-.347-.197-.513-.089a2 2 0 1 1-.362-3.54c.184.072.408-.01.485-.192a4.001 4.001 0 0 1 7.398.059c.08.2.335.282.53.19a2 2 0 1 1-.335 3.41Z"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">AUTUMN</h3>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>SEP - NOV</strong><br>AVG 17°-27° Temp.</p>
+                </div>
+                <div>
+                  <div class="winter_svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-400-fill h-24 w-auto" viewBox="0 0 16 16">
+                      <path d="M5.501 12a.35.35 0 0 0-.35.35v.544l-.47-.272a.35.35 0 1 0-.35.606l.47.272-.47.272a.35.35 0 1 0 .35.606l.47-.272v.544a.35.35 0 1 0 .7 0v-.544l.47.272a.35.35 0 1 0 .35-.606l-.47-.272.47-.272a.35.35 0 1 0-.35-.606l-.47.272v-.544a.35.35 0 0 0-.35-.35Zm5 0a.35.35 0 0 0-.35.35v.544l-.47-.272a.35.35 0 1 0-.35.606l.47.272-.47.272a.35.35 0 1 0 .35.606l.47-.272v.544a.35.35 0 1 0 .7 0v-.544l.47.272a.35.35 0 1 0 .35-.606l-.47-.272.47-.272a.35.35 0 1 0-.35-.606l-.47.272v-.544a.35.35 0 0 0-.35-.35Zm1.226-3.783A4.99 4.99 0 0 1 7.9 10a4.988 4.988 0 0 1-3.773-1.719 3 3 0 1 1-.586-5.732A4.998 4.998 0 0 1 7.9 0a4.999 4.999 0 0 1 4.38 2.587 3 3 0 1 1-.553 5.63Z"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-xl font-medium text-gray-900 titlename_1">WINTER</h3>
+                  <p class="mt-2 text-base paragraph text-lg"><strong>DEC - FEB</strong><br>AVG -5°-12° Temp.</p>
+                </div>
+                
+                
+              </div>
+            </div>
+
+           
+
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center mb-5" id="titlename">FROM OUR BLOG</h2>
+            <div class="p-3 mx-auto sm:p-10 md:p-5 dark:bg-gray-800 dark:text-gray-100">
+              <div class="flex flex-col max_w_3xl mx-auto overflow-hidden rounded">
+                <img src="img/Italy_GettyImage.webp" alt="" class="italy_blog_picture_height dark:bg-gray-500">
+                <div class="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-gray-900">
+                  <div class="space-y-2">
+                    <a rel="noopener noreferrer" href="#" class="inline-block text-2xl font-semibold sm:text-5xl blog_color titlename_1">Italian Wine Appreciation</a>
+                    <p class="text-xs dark:text-gray-400 paragraph">By &nbsp;
+                      <a rel="noopener noreferrer" href="#" class="text-3xl hover:underline paragraph">Miriam Orr</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+
+        
+        <div class="dividing_line mx-auto py-5"></div>
+
+
+        
+      <footer class="bg-white ">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm: lg:px-8">
+          <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+            <div class="pb-6">
+              <a href="index.html" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Homepage</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Blog</a>
+            </div>
+            <div class="pb-6">
+              <a href="registration.html" class="text-lg leading-6 text-blackhover:text-gray-900 paragraph">Registration</a>
+            </div>
+            <div class="pb-6">
+              <a href="about.html" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">About</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Hotel and Transportation</a>
+            </div>
+            <div class="pb-6">
+              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Policy</a>
+            </div>
+          </nav>
+          <div class="mt-10 flex justify-center space-x-5">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only ">Facebook</span>
+              <img src="icon/fb.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Discord</span>
+              <img src="icon/discord.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">X</span>
+              <img src="icon/x.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">GitHub</span>
+              <img src="icon/github.png" class="icon">
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">YouTube</span>
+              <img src="icon/ytb.png" class="icon">
+            </a>
+          </div>
+          <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 Buffer Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+  
+          
+
+          
+  
+    </body>
+</html>

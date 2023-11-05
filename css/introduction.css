@@ -59,6 +59,12 @@
 .iceland_blog_picture_height{
     height: 35rem;
 }
+.tokyo_blog_picture_height{
+    height: 40rem;
+}
+.italy_blog_picture_height{
+    height: 45rem;
+}
 
 .icelandpicture{
     height: 50rem !important;
