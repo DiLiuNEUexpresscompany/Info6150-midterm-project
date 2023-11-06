@@ -14,6 +14,7 @@
         <script src="js/roll.js" defer></script>
         <script src="js/returnButton.js" defer></script>
         <script src="js/changeimg.js" defer></script>
+        <script src="js/printform.js" defer></script>
     </head>
     <body>
       <button id="scrollToTopButton">
@@ -138,10 +139,10 @@
                 </div>
               </div>
               
-              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Hotel and Transportation</a>
+              <a href="https://www.booking.com/" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Hotel and Transportation</a>
               <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Registration</a>
-              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Blog</a>
-              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Company</a>
+              <a href="https://www.legalnomads.com/" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Blog</a>
+              <a href="about.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Company</a>
               <a href="login.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-flex items-center rounded-md py-2 px-5 text-sm font-medium"id="titlename">Login</a>
             </nav>
        
@@ -152,9 +153,9 @@
               <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
               <a href="index.html" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Homepage</a>
               <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Introduction</a>
-              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
+              <a href="https://www.booking.com/" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Hotel and Transportation</a>
               <a href="registration.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Registration</a>
-              <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
+              <a href="about.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Company</a>
               <a href="login.html" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Login</a>
             </div>
             <div class="border-t border-gray-200 pb-3 pt-4">
@@ -321,7 +322,7 @@
             <div class="sm:col-span-4">
                 <label for="country" class="block text-lg font-medium leading-6 text-gray-900 paragraph">Select Your Preferred Travel Date</label>
                 <div class="mt-2">
-                  <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                  <select id="travel-date" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
                     <option>5-Days</option>
                     <option>6-Days</option>
                     <option>7-Days</option>
@@ -341,9 +342,13 @@
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
           <button type="button" class="text-sm font-semibold leading-6 text-gray-900 titlename_1">Cancel</button>
-          <button type="submit" class="rounded-md re_bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 titlename_1">Save</button>
+          <button type="button" class="rounded-md re_bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 titlename_1" id="printButton" onclick="printFormData()">Save</button>
         </div>
       </form>
+      <div id="output" class="mt-5 p-4 bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-3">
+        <!-- 打印的信息将显示在这里 -->
+      </div>
+    
     </div>
   
     <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
@@ -431,7 +436,7 @@
               <a href="index.html" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Homepage</a>
             </div>
             <div class="pb-6">
-              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Blog</a>
+              <a href="https://www.legalnomads.com/" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Blog</a>
             </div>
             <div class="pb-6">
               <a href="registration.html" class="text-lg leading-6 text-blackhover:text-gray-900 paragraph">Registration</a>
@@ -440,7 +445,7 @@
               <a href="about.html" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">About</a>
             </div>
             <div class="pb-6">
-              <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Hotel and Transportation</a>
+              <a href="https://www.booking.com/" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Hotel and Transportation</a>
             </div>
             <div class="pb-6">
               <a href="#" class="text-lg leading-6 text-black hover:text-gray-900 paragraph">Policy</a>
