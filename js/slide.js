@@ -8,8 +8,6 @@
 
  const bottom = document.querySelector(".carousel .bottom")
  for (let i = 0; i < imageCount; i++) {
-     // DOM 操作
-
      // 创建底部按钮
      const indicator = document.createElement("div")
      indicator.classList.add("indicator")
