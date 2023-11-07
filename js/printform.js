@@ -1,5 +1,4 @@
 function printFormData() {
-    // 获取表单元素
     var firstName = document.getElementById('first-name').value;
     var lastName = document.getElementById('last-name').value;
     var email = document.getElementById('email').value;
@@ -10,7 +9,6 @@ function printFormData() {
     var postalCode = document.getElementById('postal-code').value;
     var travelDate = document.getElementById('travel-date').value;
   
-    // 创建用于展示数据的 HTML 元素
     var dataContainer = document.createElement('div');
     dataContainer.innerHTML = `
       <h2>Form Data:</h2>
@@ -54,7 +52,6 @@ function printFormData() {
       </table>
     `;
   
-    // 将数据插入到网页中
     var outputContainer = document.getElementById('output');
     outputContainer.appendChild(dataContainer);
   }
